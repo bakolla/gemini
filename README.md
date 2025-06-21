@@ -34,3 +34,6 @@ Działa jako panel webowy, gdzie wklejasz kod, wybierasz typ analizy i dostajesz
 - Pobieranie wyników analizy
 
 
+
+![Image](https://github.com/user-attachments/assets/f484d48e-1612-440b-a6a3-ce21b0f297c1)
+
