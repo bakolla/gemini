@@ -36,4 +36,5 @@ Działa jako panel webowy, gdzie wklejasz kod, wybierasz typ analizy i dostajesz
 
 
 ![Image](https://github.com/user-attachments/assets/f484d48e-1612-440b-a6a3-ce21b0f297c1)
-
+![Image](https://github.com/user-attachments/assets/4c7f8039-68f0-460c-a135-bf034a79f662)
+![Image](https://github.com/user-attachments/assets/bc038f58-9dcb-4f0d-a37e-b94d9dc8e972)
