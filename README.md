@@ -1,37 +1,122 @@
-# Gemini – Asystent AI do analizy kodu
-
-## Autor
-
-Aleksandra Bąk
-numer indeksu: 35846 
-Systemy Inteligentne, 3 rok
+**Aleksandra Bąk, systemy inteligentne, 3 rok** 
 
 
-# Opis
 
-**Gemini** to prosty asystent AI do analizy kodu źródłowego.  
-Aplikacja umożliwia szybkie uzyskanie analizy kodu, generowanie testów jednostkowych, przypadków testowych, ocenę jakości, wykrywanie błędów projektowych (SOLID, Demeter) oraz wiele innych funkcji QA.  
-Działa jako panel webowy, gdzie wklejasz kod, wybierasz typ analizy i dostajesz wynik oparty na sztucznej inteligencji Google Gemini.
+**Opis aplikacji** 
 
----
+Aplikacja "Asystent AI" to narzędzie wspierające testerów i inżynierów jakości oprogramowania w analizie kodu źródłowego. Za pomocą modeli językowych Gemini API, użytkownik może generować testy, recenzje kodu, analizować pokrycie testami i więcej – wszystko przez prosty, interaktywny interfejs webowy. 
 
-## Funkcje
 
-- Generowanie testów jednostkowych do dowolnego kodu
-- Analiza naruszeń SOLID i Prawa Demeter
-- Ocena jakości, struktury i wydajności kodu
-- Generowanie przypadków i dokumentacji testowych
-- Recenzowanie kodu i sugerowanie poprawek
-- Analiza pokrycia kodu testami i propozycje nowych testów
 
-## Dodatkowe funkcje
+**Funkcjonalności interfejsu** 
 
-- Obsługa różnych asystentów AI
-- Kopiowanie kodu oraz wyników analizy
-- Historia analizy
-- Tryb jasny/ciemny
-- Wczytywanie kodu z pliku
-- Pobieranie wyników analizy
+**Menu asystentów (lewy panel)** 
+
+- Lista dostępnych asystentów AI: 
+- Testy jednostkowe 
+- SOLID / Demeter 
+- Analiza jakości 
+- Przypadki testowe 
+- Dokumentacja testów 
+- Recenzja kodu 
+- Pokrycie testami 
+- Kliknięcie danej opcji ustawia aktywnego asystenta. 
+- Aktywna opcja podświetlona i wyróżniona. 
+
+
+
+**Tryb ciemny / jasny**  
+
+- Przełącznik motywu aplikacji – dostępny w górnej części panelu bocznego. 
+- Wyboru motywu zapamiętywany w localStorage. 
+- Automatyczne przeładowanie stylów zależnie od motywu. 
+
+
+
+**Opis aktywnego asystenta** 
+
+- Pod tytułem aktywnej sekcji wyświetla się krótki opis działania wybranego AI. 
+- Przykład: *"Generuję kompletne testy jednostkowe dla Twojego kodu..."* 
+
+
+
+
+
+
+
+**Wprowadzanie kodu** 
+
+- Główne pole tekstowe – umożliwia wklejenie fragmentu kodu do analizy. 
+- Obok znajduje się ikona kopiowania** pozwalająca skopiować kod do schowka. 
+- Alternatywnie użytkownik może wczytać plik lokalny (.js, .py, .java, .txt) klikając przycisk "Wybierz plik z kodem". 
+
+
+
+**Przycisk „Analizuj Kod”** 
+
+- Wysyła aktualny kod + prompt (zależnie od wybranego asystenta) do backendu. 
+- W odpowiedzi otrzymuje wygenerowaną analizę / testy / przypadki itd. z API Gemini. 
+
+
+
+**Wynik analizy** 
+
+- Pokazuje się pod kodem – sformatowany z użyciem ReactMarkdown (zachowuje nagłówki, listy itd.). 
+- Możliwość skopiowania wyniku do schowka  
+- Możliwość pobrania wyniku jako pliku .txt. 
+
+
+
+**Historia analiz** 
+
+- Każda analiza zapisywana jest do historii lokalnej (w pamięci aplikacji). 
+- Historia wyświetlana na dole strony – zawiera: 
+- Typ asystenta 
+- Skrócony wynik (pierwsze 200 znaków) 
+- Przycisk "Przywróć" – wczytuje poprzedni kod, wynik i tryb. 
+- Przycisk **"**Wyczyść historię" – usuwa całą historię analiz. 
+
+
+
+**Technologie użyte w projekcie** 
+
+|**Komponent** |**Technologia** |
+| :-: | :-: |
+|Frontend |React + Vite |
+|Stylowanie |CSS (własny styl + ciemny motyw) |
+|Markdown |react-markdown |
+|Backend |Node.js + Express |
+|API |Gemini 1.5 (via REST) |
+|Komunikacja |axios |
+
+
+
+
+
+` `**Sposób działania (flow użytkownika)** 
+
+1. Użytkownik wybiera rodzaj analizy z panelu bocznego. 
+2. Wkleja kod lub wybiera plik. 
+3. Klikając „Analizuj Kod” – wysyła żądanie do backendu. 
+4. Backend przesyła zapytanie do Gemini API z odpowiednim promptem. 
+5. Wynik wyświetlany jest użytkownikowi + zapisywany w historii. 
+6. Użytkownik może go pobrać, skopiować lub wrócić do poprzednich. 
+
+
+
+**Pliki aplikacji** 
+
+|**Plik / folder** |**Opis** |
+| :-: | :-: |
+|App.jsx |Główna logika i interfejs |
+|styles.css |Stylowanie + motyw ciemny |
+|server.js (backend) |Obsługa API Gemini |
+|.env |Klucz Gemini |
+|index.html (frontend) |Kontener dla aplikacji |
+
+
+
+
 
 
 
