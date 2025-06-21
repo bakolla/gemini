@@ -1,4 +1,9 @@
-**Aleksandra Bąk, systemy inteligentne, 3 rok** 
+# Gemini – Asystent AI do analizy kodu
+
+
+**Aleksandra Bąk
+Systemy Inteligentne, 3 rok
+numer indeksu: 35846** 
 
 
 
